@@ -53,8 +53,3 @@ docker run -e PREST_HTTP_PORT=3000 \
 	-e PREST_PG_PASS=pass \
 	prest/prest
 ```
-
-### Versions
-
-- lastest (developer)
-- [0.3.0](https://github.com/prest/prest/releases/tag/v0.3.0) (latest stable release)
