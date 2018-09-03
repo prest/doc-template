@@ -8,7 +8,7 @@ menu: main
 ### Filter (WHERE)
 
 ```
-GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE
+GET /DATABASE/SCHEMA/TABLE?FIELD:$eq.VALUE
 ```
 
 Query Operators:
