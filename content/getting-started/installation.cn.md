@@ -12,10 +12,10 @@ weight: 2
 
 ## Index
 
-1. [下载二进制文件](/getting-started/installation/#downloading-the-binary)
-1. [使用Docker](/getting-started/installation/#with-docker)
-1. [使用go get](/getting-started/installation/#using-go-get)
-1. [通过Homebrew](/getting-started/installation/#with-homebrew)
+1. [下载二进制文件](/cn/getting-started/installation/#downloading-the-binary)
+1. [使用Docker](/cn/getting-started/installation/#with-docker)
+1. [使用go get](/cn/getting-started/installation/#using-go-get)
+1. [通过Homebrew](/cn/getting-started/installation/#with-homebrew)
 
 ### 下载二进制文件
 

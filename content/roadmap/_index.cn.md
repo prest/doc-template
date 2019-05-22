@@ -9,4 +9,4 @@ layout: issues
 
 ### Issues
 
-We have several issues for improvements and bug fixes, see below:
+我们有几个问题需要改进和修复错误，请参阅下文：

@@ -10,11 +10,11 @@ weight: 4
 
 有四种情况来安装pREST，主要分下面2种方式：
 
-1. [二进制、homebrew、go get](/getting-started/running/#with-the-binary-or-homebrew-or-go-get)
-1. [Docker 或 Docker Compose](/getting-started/running/#with-docker)
+1. [二进制、homebrew、go get](/cn/getting-started/already-have-db/#通过-二进制-homebrew-go-get)
+1. [Docker 或 Docker Compose](/cn/getting-started/already-have-db/#通过-docker)
 
 
-### 二进制、homebrew、go get
+### 通过 二进制 homebrew go get
 
 如果通过下载二进制文件或使用Homebrew或使用go get安装pREST，则必须按如下方式传递必要的二进制变量：
 
@@ -43,4 +43,4 @@ docker run -e PREST_HTTP_PORT=3000 \
 docker-compose up
 ```
 
-有关配置和其他环境变量的更多详细信息参见 [配置](/configurations)
+有关配置和其他环境变量的更多详细信息参见 [配置](/cn/configurations)

@@ -1,5 +1,5 @@
 ---
-title: "Disable JWT Middleware"
+title: "屏蔽 JWT 中间件"
 date: 2017-02-28T16:05:05-03:00
 weight: 15
 chapter: true

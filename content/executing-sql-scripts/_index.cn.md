@@ -5,34 +5,34 @@ weight: 13
 menu: main
 ---
 
-If need perform an advanced SQL, you can write some scripts SQL and access them by REST. These scripts are templates where you can pass by URL, values to them.
+如果需要执行高级SQL，您可以编写一些脚本SQL并通过pREST访问它们。 这些脚本是模板，您可以通过URL传递值。
 
 _awesome_folder/example_of_powerful.read.sql_:
 ```sql
 SELECT * FROM table WHERE name = "{{.field1}}" OR name = "{{.field2}}";
 ```
 
-Get result:
+Get 结果:
 
 ```
 GET /_QUERIES/awesome_folder/example_of_powerful?field1=foo&field2=bar
 ```
 
-To activate it, you need configure a location to scripts in your prest.toml like:
+要激活它，您需要为prest.toml中的脚本配置一个位置，如：:
 
 ```
 [queries]
 location = /path/to/queries/
 ```
-### Scripts templates rules
+### 脚本模板规则
 
-In your scripts, the fields to replace have to look like: _field1 or field2 are examples_
+在脚本中，要替换的字段必须如下所示：field1或field2是示例:
 
 ```sql
 SELECT * FROM table WHERE name = "{{.field1}}" OR name = "{{.field2}}";
 ```
 
-Script file must have a suffix based on http verb:
+脚本文件必须具有基于http动词的后缀：
 
 |HTTP Verb|Suffix|
 |---|---|
@@ -41,7 +41,7 @@ Script file must have a suffix based on http verb:
 |PUT, PATCH|.update.sql|
 |DELETE|.delete.sql|
 
-In `queries.location`, you need given a folder to your scripts:
+在 `queries.location`, 你需要给脚本一个文件夹：
 
 
 ```sh
@@ -75,9 +75,9 @@ PATCH  /_QUERIES/bar/some_update?field1=foo
 DELETE /_QUERIES/bar/some_delete?field1=foo
 ```
 
-### Template functions
+### 模板功能
 
-- *isSet* return true if param is set.
+- *isSet* 如果设置了param，则返回true
 
 ```sql
 SELECT * FROM table
@@ -87,13 +87,14 @@ WHERE name = "{{.field1}}"
 ;
 ```
 
-- *defaultOrValue* return param value or default value.
+- *defaultOrValue* 返回参数值或默认值。
 
 ```sql
 SELECT * FROM table WHERE name = '{{defaultOrValue "field1" "gopher"}}';
 ```
 
-- *inFormat* if value of param is an slice this function format to an IN SQL clause.
+- *inFormat* 如果param的值是一个切片，则此函数格式为IN SQL子句。
+if value of param is an slice this function format to an IN SQL clause.
 
 ```sql
 SELECT * FROM table WHERE name IN {{inFormat "field1"}};
