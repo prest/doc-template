@@ -40,3 +40,8 @@ show_powered_by = true
 title = "Documentation for pREST"
 weight = 1
 languageName = "English"
+[Languages.cn]
+title = "pREST中文文档"
+weight = 2
+languageName = "Chinese中文"
+description = "将PostgreSQL数据库变成完整RESTful API."
