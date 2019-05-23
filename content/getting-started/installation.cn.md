@@ -12,16 +12,16 @@ weight: 2
 
 ## Index
 
-1. [下载二进制文件](/cn/getting-started/installation/#downloading-the-binary)
-1. [使用Docker](/cn/getting-started/installation/#with-docker)
-1. [使用go get](/cn/getting-started/installation/#using-go-get)
-1. [通过Homebrew](/cn/getting-started/installation/#with-homebrew)
+1. [下载二进制文件](/cn/getting-started/installation/#下载二进制文件)
+1. [使用Docker](/cn/getting-started/installation/#使用容器)
+1. [使用go get](/cn/getting-started/installation/#使用-go-get)
+1. [通过Homebrew](/cn/getting-started/installation/#使用-homebrew)
 
 ### 下载二进制文件
 
 对于任何操作系统，您都可以下载最新版本 [这里](https://github.com/prest/prest/releases/latest).
 
-### 使用 Docker
+### 使用容器
 
 我们只需要从Docker Hub下载pREST镜像：
 

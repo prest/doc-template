@@ -9,7 +9,7 @@ weight: 1
 ## pREST是什么?
 
 
-perst是一种为任何数据库提供RESTful API的方法。 现在我们只支持PostgreSQL，并且社区正在开发对MySQL等其他数据库的支持。
+pREST是一种为任何数据库提供RESTful API的方法。 现在我们只支持PostgreSQL，并且社区正在开发对MySQL等其他数据库的支持。
 
 ## 问题
 
