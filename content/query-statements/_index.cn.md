@@ -42,29 +42,29 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD->>JSONFIELD:jsonb=VALUE (filte
 ### 选择 Select - GET
 
 ```
-http://127.0.0.1:8000/databases (show all databases)
-http://127.0.0.1:8000/databases?_count=* (count all databases)
-http://127.0.0.1:8000/databases?_renderer=xml (JSON by default)
-http://127.0.0.1:8000/schemas (show all schemas)
-http://127.0.0.1:8000/schemas?_count=* (count all schemas)
-http://127.0.0.1:8000/schemas?_renderer=xml (JSON by default)
-http://127.0.0.1:8000/tables (show all tables)
-http://127.0.0.1:8000/tables?_renderer=xml (JSON by default)
-http://127.0.0.1:8000/DATABASE/SCHEMA (show all tables, find by schema)
-http://127.0.0.1:8000/DATABASE/SCHEMA?_renderer=xml (JSON by default)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE (show all rows, find by database and table)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column (select statement by columns)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column[array id] (select statement by array colum)
+http://127.0.0.1:8000/databases (显示所有数据库)
+http://127.0.0.1:8000/databases?_count=* (数据库计数)
+http://127.0.0.1:8000/databases?_renderer=xml (返回xml格式，默认json)
+http://127.0.0.1:8000/schemas (查看所有模式)
+http://127.0.0.1:8000/schemas?_count=* (模式计数)
+http://127.0.0.1:8000/schemas?_renderer=xml (返回xml格式，默认json)
+http://127.0.0.1:8000/tables (查看所有表)
+http://127.0.0.1:8000/tables?_renderer=xml (返回xml格式，默认json)
+http://127.0.0.1:8000/DATABASE/SCHEMA (查询指定数据库名称的模式名称下的所有表)
+http://127.0.0.1:8000/DATABASE/SCHEMA?_renderer=xml (返回xml格式，默认json)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE (查询某表，返回所有行)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column (查询某表，返回所有列)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column[array id] (查询某表，返回某列)
 
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=* (select all from TABLE)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=* (use count function)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=column (use count function)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_page=2&_page_size=10 (pagination, page_size 10 by default)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD=VALUE (filter)
-http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_renderer=xml (JSON by default)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=* (查询整表)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=* (统计表中的行数)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=column (统计表中的某列的数量)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_page=2&_page_size=10 (分页查询)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD=VALUE (条件查询)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_renderer=xml (返回xml格式，默认json)
 
 
-Select operations over a VIEW
+视图查询操作
 http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_select=column (select statement by columns in VIEW)
 http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_select=* (select all from VIEW)
 http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_count=* (use count function)
@@ -91,7 +91,7 @@ JSON DATA:
 
 ### 更新 Update - PATCH/PUT
 
-Using query string to make filter (WHERE), example:
+使用查询字符作为过滤器(WHERE), 例如:
 
 ```
 http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD1=xyz
@@ -107,7 +107,7 @@ JSON DATA:
 ```
 ### 删除 Delete - DELETE
 
-Using query string to make filter (WHERE), example:
+使用查询字符作为过滤器(WHERE), 例如:
 
 ```
 http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD1=xyz
@@ -118,7 +118,7 @@ http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD1=xyz
 ```
 /DATABASE/SCHEMA/Table?_join=Type:Table2:Table.field:Operator:Table2.field
 ```
-Parameters:
+参数:
 
 1. Type (INNER, LEFT, RIGHT, OUTER)
 1. Table2
@@ -126,7 +126,7 @@ Parameters:
 1. Operator ($eq, $lt, $gt, $lte, $gte)
 1. Table2.field
 
-Using query string to JOIN tables, example:
+使用查询字符连接表, 例如:
 
 ```
 /DATABASE/SCHEMA/friends?_join=inner:users:friends.userid:$eq:users.id
