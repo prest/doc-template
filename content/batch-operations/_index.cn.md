@@ -24,4 +24,4 @@ JSON 数据:
 ```
 
 默认的insert方法使用多个元组值，例如`insert into table values（“value”，123），（“other”，456）`。 返回插入的行。
-您可以使用带有值`copy`的`Perst-Batch-Method`头来更改此行为。 它对大量插入很有用，但返回为空。
+您可以使用带有值`copy`的`Prest-Batch-Method`头来更改此行为。 它对大量插入很有用，但返回为空。
