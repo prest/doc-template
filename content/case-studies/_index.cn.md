@@ -5,7 +5,7 @@ weight: 15
 menu: main
 ---
 
-公司和/或项目使用perst？ 描述您的用例 [这里](https://github.com/prest/prest/issues/new?title=Case%20Studies:%20).
+公司和/或项目使用prest？ 描述您的用例 [这里](https://github.com/prest/prest/issues/new?title=Case%20Studies:%20).
 下面有一些使用（或信任）pREST的公司和项目。
 
 ## 公司
