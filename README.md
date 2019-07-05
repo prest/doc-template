@@ -1,5 +1,5 @@
 # pREST docs
-Public site
+Public site - https://postgres.rest/
 
 ## Contributing
 
