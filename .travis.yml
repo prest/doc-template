@@ -1,21 +1,21 @@
 language: go
 
 go:
-  - "1.10"
+  - 1.x
 
 sudo: false
-
-git:
-  depth: 10
-
-branches:
-  only:
-    - master
 
 install:
   - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep -E "hugo_[^extended](.*)_Linux-64bit.deb" | cut -d ":" -f 2,3 | tr -d \" | grep https | wget -i - -O hugo.deb
   - sudo dpkg -i hugo.deb
-  - rm -rf public 2> /dev/null
+  - npm install netlify-cli -g
 
 script:
   - hugo
+
+deploy:
+  provider: script
+  script: netlify deploy --dir=public --prod
+  skip_cleanup: true
+  on:
+    branch: master
