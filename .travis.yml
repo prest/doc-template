@@ -13,7 +13,7 @@ branches:
     - master
 
 install:
-  - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep -E "hugo_[^extended](.*)_Linux-64bit.deb" | cut -d : -f 2,3 | tr -d \" | grep https | wget -i - -O hugo.deb
+  - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep -E "hugo_[^extended](.*)_Linux-64bit.deb" | cut -d ":" -f 2,3 | tr -d \" | grep https | wget -i - -O hugo.deb
   - sudo dpkg -i hugo.deb
   - rm -rf public 2> /dev/null
 
