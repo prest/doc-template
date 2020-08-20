@@ -36,4 +36,4 @@ There is _PostgREST_ written in _Haskell_, but keeping Haskell software in produ
 - Linux
 - macOS
 - Windows
-- BSD ([we need your help](https://github.com/prest/prest/issues/279))
+- BSD
