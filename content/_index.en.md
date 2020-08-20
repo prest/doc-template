@@ -8,16 +8,11 @@ weight: 1
 
 ## What is pREST?
 
-pREST is a way to serve a RESTful APIs for any database. Right now we support PostgreSQL and support to others databases such as MySQL are being developed by the community.
+pREST (**P**_ostgreSQL_ **REST**) is a way to serve a RESTful APIs for PostgreSQL and support to others databases such as MySQL are being developed by the _community_.
 
 > It started with PostgreSQL, but we didn't _stop here_. Our purpose is to support **other databases (relational and non-relational)** - *we understand the size of the challenge, so I invite you to contribute to the evolution of the project_.
 
 [**All releases**](/releases/)
-
-### Because the name pREST?
-
-**P**_ostgreSQL_ **REST**, today we trade **p** of _PostgreSQL_ to **Pure**.
-**Because Pure?** Comes from **Pure functions** have lots of properties that are important in _functional programming_, including `referential transparency` (you can replace a function call with its resulting value without changing the meaning of the program).
 
 ## Problem
 
