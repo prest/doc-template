@@ -17,7 +17,7 @@ custom_css = []
 custom_js = []
 highlightjs = "css/highlight.css"
 favicon = "favicon.ico"
-editURL = "https://github.com/prest/prest.github.io/tree/master/content/"
+editURL = "https://github.com/prest/prest/tree/master/docs/"
 showVisitedLinks = true
 logo = "logo.png"
 
