@@ -628,9 +628,9 @@ code, kbd, pre, samp {
 code {
     border-radius: 2px;
     white-space: nowrap;
-    color: #5e5e5e;
-    background: #FFF7DD;
-    border: 1px solid #fbf0cb;
+    color: #010102;
+    background: #eba0c8;
+    border: 1px solid #D64292;
     padding: 0px 2px;
 }
 code + .copy-to-clipboard {
