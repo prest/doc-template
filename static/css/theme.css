@@ -275,7 +275,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-top: 9px;
 }
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-    background: #251f29;
+    background: #d8d8d8;
     margin-left: -1rem;
     margin-right: -1rem;
     padding-left: 1rem;
