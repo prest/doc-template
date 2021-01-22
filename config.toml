@@ -1,4 +1,4 @@
-baseurl = "https://postgres.rest/"
+baseurl = "https://docs.prestd.com/"
 languageCode = "en-us"
 metadataformat = "yaml"
 title = "pREST"
@@ -32,7 +32,7 @@ gratipay = ""
 show_relations = true
 
 [params.footer]
-copyright = "[pREST](https://postgres.rest/)"
+copyright = "[pREST](https://prestd.com/)"
 show_powered_by = true
 
 [Languages]
