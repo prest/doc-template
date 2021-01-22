@@ -193,7 +193,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     color: rgba(204, 204, 204, 0.6);
 }
 #sidebar hr {
-    border-bottom: 1px solid #010102;
+    border-bottom: 1px solid #D64292;
 }
 #sidebar a.padding {
     padding: 0 1rem;
@@ -432,7 +432,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #chapter h1 {
     font-size: 5rem;
-    border-bottom: 4px solid #F0F2F4;
+    border-bottom: 4px solid #eba0c8;
 }
 #chapter p {
     text-align: center;
@@ -467,7 +467,7 @@ h1 {
     font-weight: 200;
 }
 blockquote {
-    border-left: 10px solid #F0F2F4;
+    border-left: 10px solid #eba0c8;
 }
 blockquote p {
     font-size: 1.1rem;
@@ -659,7 +659,7 @@ pre code {
     font-size: 15px;
 }
 hr {
-    border-bottom: 4px solid #F0F2F4;
+    border-bottom: 4px solid #eba0c8;
 }
 .page-title {
     margin-top: -25px;
