@@ -1,42 +1,10 @@
-baseurl = "https://docs.prestd.com/"
-languageCode = "en-us"
-metadataformat = "yaml"
-title = "pREST"
-theme = "hugo-theme-learn"
+baseURL = "https://docs.prestd.com/"
+title = "prestd"
+enableRobotsTXT = true
+theme = "compose"
+enableGitInfo = true
 
-disqusShortname = ""
-googleAnalytics = "UA-105743002-1"
-
-[params]
-name = "pREST"
-description = "instant, realtime, high-performance on any Postgres application, existing or new."
-github_user = "prest"
-github_repo = "prest"
-github_banner = true
-custom_css = []
-custom_js = []
-highlightjs = "css/highlight.css"
-favicon = "favicon.ico"
-editURL = "https://github.com/prest/prest/tree/master/docs/"
-showVisitedLinks = true
-logo = "logo.png"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
-
-[params.sidebar]
-github_button  = true
-travis_button  = true
-coveralls_button = true
-gratipay = ""
-show_relations = true
-
-[params.footer]
-copyright = "[pREST](https://prestd.com/)"
-show_powered_by = true
-
-[Languages]
-[Languages.en]
-title = "Documentation for pREST"
-weight = 1
-languageName = "English"
+  home = ["HTML", "RSS","JSON"]
