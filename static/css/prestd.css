@@ -8,3 +8,8 @@ html[data-mode="dark"] {
 .aside_active {
     margin-left: 0.2em
 }
+
+.aside_inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
