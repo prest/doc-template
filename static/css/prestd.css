@@ -1,0 +1,8 @@
+html {
+    --theme: #6610f2;
+    --inline-color: #D64292;
+}
+
+.aside_active {
+    margin-left: 0.2em
+}
