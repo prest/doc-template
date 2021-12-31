@@ -1,6 +1,7 @@
-+++
-title = "prestd"
-+++
+---
+title: "documentation"
+weight: 1
+---
 
 The _**prestd**_ is open source low-code (aiming to be non-code, with plugin support) to expose database in RESTful API format.
 
