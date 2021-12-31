@@ -1,6 +1,8 @@
-html {
-    --theme: #6610f2;
+html,
+html[data-mode="dark"] {
+    /*--theme: #6610f2;*/
     --inline-color: #D64292;
+    --theme: #9580FF;
 }
 
 .aside_active {
