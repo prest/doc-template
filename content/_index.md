@@ -7,6 +7,8 @@ The _**prestd**_ is open source low-code (aiming to be non-code, with plugin sup
 
 Simplify and accelerate development, instant, realtime, high-performance on any **Postgres** application, **existing or new**.
 
+> PostgreSQL version 9.5 or higher
+
 It started with **PostgreSQL** and we'll stop there, we want to provide quality support on Postgres features. At first we wanted to embrace the world by supporting other databases, but as time went by (gaining experience) we realized that we would not do a good job in even one database.
 
 {{< tip >}}
